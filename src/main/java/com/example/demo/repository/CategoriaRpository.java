@@ -13,6 +13,7 @@ public class CategoriaRpository {
     public Categoria adicionar(Categoria categoria) {
         categoria.setId(proximoId);
         categorias.add(categoria);
+        proximoId++;
         return categoria;
     }
 
