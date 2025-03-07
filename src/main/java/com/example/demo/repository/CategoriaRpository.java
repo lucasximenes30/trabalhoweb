@@ -38,5 +38,6 @@ public class CategoriaRpository {
 
     public boolean remover(long id){
         return categorias.removeIf(c -> c.getId().equals(id));
+
     }
 }

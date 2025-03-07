@@ -16,10 +16,12 @@ public class CategoriaService {
 
     public List<Categoria> listarCategorias() {
         return repository.listarTodas();
+
     }
 
     public Optional<Categoria> buscarCategoria(Long id) {
         return repository.buscarPorId(id);
+
     }
 
     public boolean atualizarCategoria(Long id, String nome, String descricao) {
@@ -29,5 +31,6 @@ public class CategoriaService {
 
     public boolean deletarCategoria(Long id) {
         return repository.remover(id);
+
     }
 }
